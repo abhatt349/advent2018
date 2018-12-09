@@ -14,8 +14,15 @@ using std::cin;
 using std::endl;
 using std::vector;
 
-int answer1();
-int answer2();
-void reduce(vector<int> &v, int &total, int pos);
-int len(vector<int> v, int pos);
-void reduce(vector<int> &v, int &total, int pos, int end);
+
+struct node
+{
+    long val;
+    struct node *next;
+    struct node *prev;
+};
+
+
+
+long answer1();
+long answer2();
